@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Blog - Home</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            background-color: #f3f3f3;
+            color: #333;
+        }
+
+        a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        h1, h2 {
+            color: #2c3e50;
+        }
+
+        nav {
+            background-color: #34495e;
+            padding: 10px 0;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            color: #ecf0f1;
+            font-size: 18px;
+            padding: 5px 15px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            background-color: #2c3e50;
+            border-radius: 4px;
+        }
+
+        .hero {
+            background: url('https://source.unsplash.com/1600x900/?nature') no-repeat center center/cover;
+            height: 400px;
+            color: white;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 24px;
+        }
+
+        /* Main Content */
+        .container {
+            max-width: 1100px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+
+        .featured-posts {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .post {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            flex: 1;
+        }
+
+        .post img {
+            max-width: 100%;
+            border-radius: 5px;
+        }
+
+        .post h2 {
+            margin-top: 15px;
+        }
+
+        .post p {
+            margin: 10px 0;
+        }
+
+        footer {
+            background-color: #34495e;
+            padding: 10px 0;
+            text-align: center;
+            color: white;
+            margin-top: 30px;
+        }
+
+        #subtitle {
+            font-size: larger;
+            color: #008080;
+        }
+
+        .icons {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        #id {
+            color: #c0c0c0;
+        }
+
+    </style>
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="hero">
+        <h1>Your were wrong about everything!</h1>
+        <p id="subtitle">But why? I did everything you asked me to.</p>
+    </div>
+
+    <div class="container">
+        <h2>Featured Posts</h2>
+        <div class="featured-posts">
+            <div class="post">
+                <img class="icons" src="https://1000logos.net/wp-content/uploads/2021/05/GitHub-logo.png" alt="Post 1" height="80">
+                <h2>Github</h2>
+                <p>GitHub is a developer platform that allows developers to create, store, manage and share their code.</p>
+                <a href="https://github.com/ireallywantthatname">Read More</a>
+            </div>
+            <div class="post">
+                <img class="icons" src="https://raw.githubusercontent.com/Lichthagel/trakt-rust/master/docs/trakt-wide-red-black.png" alt="Post 2">
+                <h2>Trakt</h2>
+                <p>Trakt is a community of TV and movie lovers. It's free to join! TRACK shows and movies you watch.</p>
+                <a href="https://trakt.tv/dashboard">Read More</a>
+            </div>
+            <div class="post">
+                <img class="icons" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Threads_%28app%29_logo.svg/768px-Threads_%28app%29_logo.svg.png?20230705004747" alt="Post 3" height="80">
+                <h2>Threads</h2>
+                <p>Threads is an app from Instagram where you can view and share public conversations.</p>
+                <a href="https://threads.net/ireallywantthatname">Read More</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p id="id">Akash De Silva &copy; 2004. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
